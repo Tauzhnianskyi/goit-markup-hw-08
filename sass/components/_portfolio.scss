@@ -1,0 +1,95 @@
+.portfolio__filter-list {
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__filter-list .portfolio__filter-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.project-title {
+  margin-bottom: 4px;
+}
+
+.portfolio__list-items {
+  display: flex;
+  flex-basis: calc(100% / 3 - 30px);
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  & .portfolio__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    transition: box-shadow 250ms var(--cubic-bezier);
+  }
+  & .portfolio__project-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+  }
+  & .portfolio__link {
+    text-decoration: none;
+  }
+  & .portfolio__project-profile {
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }
+}
+
+.portfolio__wrapper-vision:hover .portfolio__wrapper-text {
+  transform: translateY(0);
+}
+
+.portfolio__item-border {
+  border: 1px solid #eeeeee;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.portfolio__wrapper-img {
+  position: relative;
+  overflow: hidden;
+  & .portfolio__wrapper-text {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-white-color);
+
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+    transition: transform 250ms var(--cubic-bezier);
+  }
+}
+
+.portfolio__list-items .portfolio__item:hover,
+.portfolio__list-items .portfolio__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__list-items .portfolio__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio__list-items .portfolio__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
