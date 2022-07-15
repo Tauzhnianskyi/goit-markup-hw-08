@@ -20,6 +20,11 @@
                 <a href="/" class="logo">
                     Web<span class="logo__part">Studio</span>
                 </a>
+                <button type="button" class="menu-open-btn"><svg class="mobile-menu" width="24" height="16">
+                  <use href="./images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+                </button>
+                
                 <ul class="site-nav site-indent">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link active">Портфолио</a></li>
@@ -29,26 +34,63 @@
             <ul class="auth-nav auth-indent">
                 <li class="item">
                     <a href="mailto:info@devstudio.com" class="button-primary">
-                        <svg class="auth-nav-item" width="16" height="12">
+                        <svg class="auth-nav-item mail" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope-hover"></use>
+                        </svg>
+                        <svg class="auth-nav-item mail-tablet" width="14" height="10px">
+                          <use href="./images/icons.svg#icon-email-icon-tablet"></use>
                         </svg>
                         <span class="email-number">info@devstudio.com</span></a>
                 </li>
                 <li class="item">
                     <a href="tel:+380961111111" class="button-secondary">
-                        <svg class="auth-nav-item" width="10" height="16">
+                        <svg class="auth-nav-item phone" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        <svg class="auth-nav-item phone-tablet" width="10" height="14">
+                          <use href="./images/icons.svg#icon-tel-icon-tablet"></use>
                         </svg>
                         <span class="email-number">+38 096 111 11 11</span></a>
                 </li>
             </ul>
         </div>
+        <div class="mob-menu is-hidden">
+                 <div class="container mob__menu">
+                  
+                  <div class="mobile-nav">
+                    <button type="button" class="close-menu-btn"><svg class="close-btn" width="19" height="19">
+                    <use href="./images/icons.svg#icon-close-mob"></use>
+                  </svg>
+                  </button> 
+                    <div class="mobile-nav__menu">
+                    <ul class="mob-menu__list">
+                    <li class="mob-menu__item"><a href="./index.html" class="mob-menu__nav-link">Студия</a></li>
+                    <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__nav-link active">Портфолио</a></li>
+                    <li class="mob-menu__item"><a href="" class="mob-menu__nav-link">Контакты</a></li>
+                  </ul>
+                  </div>
+                    <div class="mobile-nav__contact">
+                      <ul class="mob-menu__contacts-list">
+                    <li class="mob-menu__contacts-tel">+38 096 111 11 11</li>
+                    <li class="mob-menu__contacts-email">info@devstudio.com</li>
+                 </ul>
+                  <ul class="mob-menu__soc-list">
+                    <li class="mob-menu__soc-item"><a href="" class="mob-menu__link">Instagram</a></li>
+                    <li class="mob-menu__soc-item"><a href="" class="mob-menu__link">Twitter</a></li>
+                    <li class="mob-menu__soc-item"><a href="" class="mob-menu__link">Facebook</a></li>
+                    <li class="mob-menu__soc-item"><a href="" class="mob-menu__link">LinkedIn</a></li>
+                  </ul>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                
     </header>
 
     <!-- Main  -->
     <main>
         <section class="section">
-           <div class="container">
+           <div class="container porfolio-indent">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="portfolio__filter-list">
                     <li class="portfolio__filter-item">
@@ -72,11 +114,18 @@
                             <div class="portfolio__wrapper-vision">
                                 <a href="" class="portfolio__link">
                                     <div class="portfolio__wrapper-img">
-                                        <img src="./images/technokryak.jpg" alt="Технокряк" width="370">
+                                        <picture>
+                                            <source srcset="./images/technokryak-desktop.jpg 1x, ./images/technokryak-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/technokryak-tablet.jpg 1x, ./images/technokryak-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/technokryak-mobile.jpg 1x, ./images/technokryak-mobile-2x.jpg 2x" type="image/jpeg">
+                                        
+                                        <img class="portfolio__list-image" src="./images/technokryak.jpg" alt="Технокряк" width="370">
+                                        </picture>
                                         <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                             позволит
                                             посетителю получить
                                             исчерпывающие сведения о компании или частном лице.</p>
+                         
                                     </div>
                                     <div class="portfolio__item-border">
                                         <h2 class="portfolio__project-title">Технокряк</h2>
@@ -89,7 +138,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/poster-basketball.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                    <picture>
+                                            <source srcset="./images/poster-basketball-desktop.jpg 1x, ./images/poster-basketball-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/poster-basketball-tablet.jpg.jpg 1x, ./images/poster-basketball-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/poster-basketball-mobile.jpg 1x, ./images/poster-basketball-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/poster-basketball.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                    </picture>                                    
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -106,7 +160,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                                    <picture>
+                                            <source srcset="./images/seafood-desktop.jpg 1x, ./images/seafood-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/seafood-tablet.jpg.jpg 1x, ./images/seafood-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -123,7 +182,12 @@
                        <div class="portfolio__wrapper-vision">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__wrapper-img">
-                                <img src="./images/prime.jpg" alt="Проект Prime" width="370">
+                                <picture>
+                                            <source srcset="./images/prime-desktop.jpg 1x, ./images/prime-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/prime-tablet.jpg.jpg 1x, ./images/prime-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile-2x.jpg 2x" type="image/jpeg">
+                                <img class="portfolio__list-image" src="./images/prime.jpg" alt="Проект Prime" width="370">
+                                </picture>
                                 <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит
                                     посетителю получить
@@ -140,7 +204,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/boxes.jpg" alt="Проект Boxes" width="370">
+                                    <picture>
+                                            <source srcset="./images/boxes-desktop.jpg 1x, ./images/boxes-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/boxes-tablet.jpg.jpg 1x, ./images/boxes-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/boxes.jpg" alt="Проект Boxes" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -157,7 +226,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/noborders.jpg" alt="Inspiration has no Borders" width="370">
+                                    <picture>
+                                            <source srcset="./images/noborders-desktop.jpg 1x, ./images/noborders-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/noborders-tablet.jpg.jpg 1x, ./images/noborders-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/noborders-mobile.jpg 1x, ./images/noborders-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/noborders.jpg" alt="Inspiration has no Borders" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -174,7 +248,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/limitededition.jpg" alt="Издание Limited Edition" width="370">
+                                    <picture>
+                                            <source srcset="./images/limitededition-desktop.jpg 1x, ./images/limitededition-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/limitededition-tablet.jpg.jpg 1x, ./images/limitededition-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/limitededition-mobile.jpg 1x, ./images/limitededition-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/limitededition.jpg" alt="Издание Limited Edition" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -191,7 +270,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/LAB.jpg" alt="Проект LAB" width="370">
+                                    <picture>
+                                            <source srcset="./images/lab-desktop.jpg 1x, ./images/lab-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/lab-tablet.jpg.jpg 1x, ./images/lab-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/LAB.jpg" alt="Проект LAB" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -208,7 +292,12 @@
                         <div class="portfolio__wrapper-vision">
                             <a href="" class="portfolio__link">
                                 <div class="portfolio__wrapper-img">
-                                    <img src="./images/growingbussiness.jpg" alt="Growing Business" width="370">
+                                    <picture>
+                                            <source srcset="./images/growingbusiness-desktop.jpg 1x, ./images/growingbusiness-desktop-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                                            <source srcset="./images/growingbusiness-tablet.jpg.jpg 1x, ./images/growingbusiness-tablet-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                            <source srcset="./images/growingbusiness-mobile.jpg 1x, ./images/growingbusiness-mobile-2x.jpg 2x" type="image/jpeg">
+                                    <img class="portfolio__list-image" src="./images/growingbussiness.jpg" alt="Growing Business" width="370">
+                                    </picture>
                                     <p class="portfolio__wrapper-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит
                                         посетителю получить
@@ -227,7 +316,7 @@
     </main>
     <!-- footer -->
        <footer class="footer footer-indent">
-       <div class="container">
+       <div class="container portfolio-container">
            <div class="footer__flex">
             <div class="footer__logo-adress">
                     <a href="/" class="logo">
@@ -291,5 +380,6 @@
        </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

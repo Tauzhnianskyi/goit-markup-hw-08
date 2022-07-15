@@ -1,16 +1,27 @@
 .partners__list {
   display: flex;
   justify-content: center;
+  gap: 30px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
 }
 
 .partners__item {
-  width: 170px;
-  height: 92px;
-  margin-left: 30px;
+  // width: 170px;
+  // height: 92px;
   transition: border-color 250ms var(--cubic-bezier),
     fill 250ms var(--cubic-bezier);
-  &:first-child {
-    margin-left: 0;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+    min-height: 92px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
   }
 }
 

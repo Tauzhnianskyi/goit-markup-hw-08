@@ -1,6 +1,7 @@
 .benefits__item {
   display: flex;
   flex-direction: column;
+
   @media screen and (min-width: 480px) {
     width: 100%;
     margin: 0;
@@ -8,8 +9,9 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1600px) {
-    width: calc((100% - 430px) / 4);
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -63,13 +65,16 @@
     justify-content: center;
     gap: 30px;
   }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    align-items: stretch;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;

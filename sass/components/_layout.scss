@@ -29,16 +29,49 @@ ol {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__whatwedo {
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .section__team {
   background-color: var(--bcg-secondary-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {

@@ -1,38 +1,42 @@
 .hero {
-  max-width: 100%;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bcg-hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(/images/bcg-hero-mobile.jpg);
-    background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/bcg-hero-mobile-2x.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(/images/bcg-hero-tablet.jpg);
-    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/bcg-hero-tablet-2x.jpg);
+    }
   }
-  @media screen and (min-width: 1600px) {
-    max-width: 1600px;
-
+  @media screen and (min-width: 1200px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/bcg-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+      url(../images/bcg-hero-desktop.jpg);
+
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/bcg-hero-desktop-2x.jpg);
+    }
   }
 }
 
@@ -53,11 +57,10 @@
   @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: calc(42 / 26);
-  }
-  @media screen and (min-width: 768px) {
     width: 360px;
   }
-  @media screen and (min-width: 1600px) {
+
+  @media screen and (min-width: 1200px) {
     width: 700px;
     font-weight: 900;
     font-size: 44px;
@@ -81,4 +84,17 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  height: 400px;
+  max-width: 1600px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 }
