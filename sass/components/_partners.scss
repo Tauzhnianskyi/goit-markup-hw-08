@@ -2,20 +2,14 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 .partners__item {
-  // width: 170px;
-  // height: 92px;
   transition: border-color 250ms var(--cubic-bezier),
     fill 250ms var(--cubic-bezier);
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 30px) / 2);
-    min-height: 92px;
-  }
+  width: calc((100% - 30px) / 2);
+  min-height: 92px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);

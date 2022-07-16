@@ -4,10 +4,8 @@
 .nav {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
-    min-height: 60px;
-    padding-left: 15px;
-  }
+  min-height: 60px;
+  padding-left: 15px;
 }
 
 .logo {
@@ -35,10 +33,7 @@
 }
 
 .site-nav {
-  display: flex;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -77,12 +72,9 @@
 
 .site-nav__item {
   margin-right: 50px;
-  // position: relative;
+  position: absolute;
   &:last-child {
     margin-right: 0;
-  }
-  @media screen and (min-width: 480px) {
-    position: absolute;
   }
   @media screen and (min-width: 768px) {
     position: relative;
@@ -92,11 +84,9 @@
 .main-nav {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
-    min-height: 60px;
-    padding-left: 0;
-    padding-right: 0;
-  }
+  min-height: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .auth-indent {
@@ -106,12 +96,9 @@
 }
 
 .auth-nav {
-  display: flex;
+  display: none;
   & .item + .item {
     margin-left: 50px;
-  }
-  @media screen and (min-width: 480px) {
-    display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -282,10 +269,8 @@
   visibility: visible;
   transform: translateY(0);
   transition: transform 250ms var(--cubic-bezier);
-  @media screen and (min-width: 480px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .mob-menu__soc-item:not(:last-child):after {

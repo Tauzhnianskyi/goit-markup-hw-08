@@ -5,13 +5,11 @@
   margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: calc(100% - 30px);
+  row-gap: 15px;
 
-  @media screen and (min-width: 480px) {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: calc(100% - 30px);
-    row-gap: 15px;
-  }
   @media screen and (min-width: 768px) {
     text-align: center;
     flex-wrap: wrap;
@@ -39,10 +37,6 @@
   width: 100%;
 }
 
-// .portfolio__filter-list .portfolio__filter-item:not(:first-child) {
-//   margin-left: 8px;
-// }
-
 .project-title {
   margin-bottom: 4px;
 }
@@ -53,15 +47,11 @@
   width: calc(100% - 30px);
   padding-left: 15px;
   padding-right: 15px;
-  // flex-basis: calc(100% / 3 - 30px);
-  flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: 480px) {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     align-items: center;
@@ -79,10 +69,7 @@
 
 .portfolio__list-items .portfolio__item {
   transition: box-shadow 250ms var(--cubic-bezier);
-
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
+  width: 100%;
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
     align-items: stretch;
@@ -145,6 +132,7 @@
   font-size: 18px;
   line-height: 1.6;
   color: var(--primary-white-color);
+  height: 100%;
 
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
@@ -157,10 +145,6 @@
     font-size: 18px;
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
   }
 }
 
